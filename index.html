@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <title>Complements and Insults by Omer S. Atzraf</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel = "stylesheet" href="public/css/styles.css">
   </head>
-
+  
   <body>
     <div class="root">
       <section class="headlines">
@@ -15,21 +15,24 @@
       <div class="interactions">
 
         <div class="container">
-          <p class="complement">none loaded yet</p>
-          <button class="request-complement box">Request New Complement</button>
+          <p class="complement box-text">none loaded yet</p>
+          <div class="request-complement box">
+            <p class="box-text"> Request New Complement </p>
+          </div>
         </div>
 
         <div class="container">
-          <p class="insult">none loaded yet</p>
-          <button class="request-insult box">Request New Insult</button>
-        </div> 
-        
-        <div class="box"></div>           
+          <p class="insult box-text">none loaded yet</p>
+          <div class="request-insult box">
+          <p class="box-text"> Request New Insult </p>
+          </div>
+        </div>     
       
       </div>
 
     </div>
+    <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js"></script>
     <script src="./public/complements.js"></script>
-    <script src="./public/insults.js"></script>
+    <script src="./public/insults.js"></script>    
   </body>
 </html>
