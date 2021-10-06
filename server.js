@@ -35,11 +35,10 @@ function getRandomInsult() {
   return insults[randomIndex]
 }
 
-
 const app = express();
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"))
+  res.sendFile(path.join(__dirname, "dist/index.html"))
 })
 
 app.get("/complement", function(req, res) {
@@ -58,10 +57,7 @@ app.get("/insult", function(req, res) {
     .end()
 })
 
-app.use("/public", express.static("./public"))
-
-
-
+app.use(express.static(path.join(__dirname, "dist/")));
 
 app.listen(5500);
 console.log("listening on http://localhost:5500")
