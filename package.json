@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "parcel": "^2.0.0-rc.0",
+    "popmotion": "^10.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "example",
+  "version": "1.0.0",
+  "main": "animation.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaper4life/final-JS-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaper4life/final-JS-task/issues"
+  },
+  "homepage": "https://github.com/zaper4life/final-JS-task#readme",
+  "devDependencies": {},
+  "description": ""
+}
