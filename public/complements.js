@@ -1,6 +1,10 @@
+const popmotion = require("popmotion")
+const { styler, spring, listen, pointer, value } = popmotion;
+
+
 const complement = document.querySelector(".request-complement");
-const divStyler = popmotion.styler(complement);
-const ballXY = popmotion.value({ x: 0, y: 0 }, divStyler.set);
+const divStyler = styler(complement);
+const ballXY = value({ x: 0, y: 0 }, divStyler.set);
 
 popmotion.listen(complement, "mousedown touchstart").start(e => {
   fetch("/complement")

@@ -1,3 +1,6 @@
+const popmotion = require("popmotion")
+const { styler, spring, listen, pointer, value } = popmotion;
+
 const insult = document.querySelector(".request-insult");
 const divStylerInsult = popmotion.styler(insult);
 const ballXYInsult = popmotion.value({ x: 0, y: 0 }, divStylerInsult.set);
